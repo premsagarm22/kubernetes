@@ -1,3 +1,0 @@
-  vpc:
-    source: https://github.com/premsarja/tf-module-vppc.git
-    version: "qa"
