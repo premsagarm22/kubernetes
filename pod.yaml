@@ -2,9 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
-  annotations:
-    kubernetes.io/config.mirror: "true"  # Add this annotation
 spec:
+  nodeName: ip-172-31-49-196.ec2.internal  # Set the nodeName to match the node
   containers:
   - name: nginx
     image: nginx
