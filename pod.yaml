@@ -1,9 +1,15 @@
+# apiVersion:
+# kind: 
+# metadata:
+# spec:
+
 apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
 spec:
-  nodeName: ip-172-31-49-196.ec2.internal  # Set the nodeName to match the node
   containers:
   - name: nginx
-    image: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
