@@ -7,7 +7,7 @@ apiVersion: v1
 kind: Pod
 metadata:
 annotations:
-  kubernetes.io/config.mirror: "true"
+  kubernetes.io/config.mirror: "false"
   name: nginx
 spec:
   containers:
