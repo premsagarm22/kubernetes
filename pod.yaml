@@ -7,8 +7,10 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-mirror
+  annotations:
+    kubernetes.io/config.mirror: "true"
 spec:
-  nodeName: prem-node-group  # Replace <node_name> with the actual node name
+  nodeName: prem-node-group
   containers:
   - name: nginx
     image: nginx:latest
