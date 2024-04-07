@@ -10,7 +10,7 @@ metadata:
   annotations:
     kubernetes.io/config.mirror: "true"
 spec:
-  nodeName: prem-node-group
+  nodeName: prem
   containers:
   - name: nginx
     image: nginx:latest
