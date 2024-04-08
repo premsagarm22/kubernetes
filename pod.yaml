@@ -8,7 +8,7 @@ kind: Pod
 metadata:
   name: nginx-mirror
 spec:
-  nodeName: ip-172-31-3-104.ec2.internal
+  nodeName: ip-172-31-74-253.ec2.internal
   containers:
   - name: nginx
     image: nginx:1.14.2
