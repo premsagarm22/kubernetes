@@ -17,7 +17,16 @@ kind: Pod
 metadata:
   name: my-pod
 spec:
-  nodeName: ip-172-31-3-104.ec2.internal
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - ip-172-31-3-104.ec2.internal
+            - ip-172-31-74-253.ec2.internal
   containers:
   - name: nginx
     image: nginx
