@@ -5,6 +5,7 @@ metadata:
   annotations:
     kubernetes.io/config.mirror: "true"
 spec:
+  nodeName: ip-172-31-3-104.ec2.internal && ip-172-31-74-253.ec2.internal
   containers:
   - name: nginx
     image: nginx
