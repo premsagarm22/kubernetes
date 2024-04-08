@@ -28,7 +28,7 @@ spec:
             - ip-172-31-3-104.ec2.internal
             - ip-172-31-74-253.ec2.internal
   containers:
-  - name: nginx
-    image: nginx
+  - name: nginx:latest
+    image: nginx:latest
     ports:
     - containerPort: 80
