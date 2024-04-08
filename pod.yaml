@@ -8,7 +8,7 @@ kind: Pod
 metadata:
   name: nginx-mirror
   annotations:
-    kubernetes.io/config.mirror:ip-172-31-3-104.ec2.internal 
+    kubernetes.io/config.mirror: ip-172-31-3-104.ec2.internal
 spec:
   containers:
   - name: nginx
