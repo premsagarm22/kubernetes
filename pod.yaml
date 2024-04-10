@@ -2,9 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
-  annotations:
-    kubernetes.io/config.mirror: "123"
 spec:
+  nodeName: ip-172-31-24-198.ec2.internal  # Replace <node-name> with the name of the node where you want to schedule the pod
   containers:
   - name: nginx
     image: nginx
