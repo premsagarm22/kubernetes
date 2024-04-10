@@ -1,11 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-pod
+  name: nginx
 spec:
-  nodeName: ip-172-31-24-198.ec2.internal
   containers:
   - name: nginx
-    image: nginx
+    image: nginx:latest
     ports:
     - containerPort: 80
