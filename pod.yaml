@@ -1,12 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-mirror-pod
-  annotations:
-    kubernetes.io/config.mirror: "mirror-pod-nginx"
+  name: nginx
 spec:
   containers:
   - name: nginx
-    image: nginx
+    image: nginx:latest
     ports:
     - containerPort: 80
