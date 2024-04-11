@@ -9,14 +9,12 @@
 #     ports:
 #     - containerPort: 80
 
-
 apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
-  annotations:
-    kubernetes.io/config.mirror: "true"
 spec:
+  nodeName: ip-172-31-84-3.ec2.internal
   containers:
   - name: nginx
     image: nginx
