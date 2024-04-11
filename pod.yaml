@@ -14,7 +14,7 @@ kind: Pod
 metadata:
   name: nginx
 spec:
-  nodeName: ip-172-31-84-3.ec2.internal
+  nodeName: ip-172-31-81-2.ec2.internal
   containers:
   - name: nginx
     image: nginx
