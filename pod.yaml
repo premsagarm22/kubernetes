@@ -1,13 +1,13 @@
-# apiVersion: v1
-# kind: Pod
-# metadata:
-#   name: nginx
-# spec:
-#   containers:
-#   - name: nginx
-#     image: nginx:latest
-#     ports:
-#     - containerPort: 80
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
 
 # apiVersion: v1
 # kind: Pod
@@ -19,14 +19,14 @@
 #   - name: nginx
 #     image: nginx
 
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-mirror
-  annotations:
-    kubernetes.io/config.mirror: "df7cc47f8477b6b1226d7d23a904867b"
-spec:
-  nodeName: ip-172-31-81-2.ec2.internal
-  containers:
-  - name: nginx
-    image: nginx
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: nginx-mirror
+#   annotations:
+#     kubernetes.io/config.mirror: "df7cc47f8477b6b1226d7d23a904867b"
+# spec:
+#   nodeName: ip-172-31-81-2.ec2.internal
+#   containers:
+#   - name: nginx
+#     image: nginx
