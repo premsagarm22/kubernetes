@@ -1,0 +1,22 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: secrets
+data:
+  DBUSER: "admin"
+  PASSWD: "admin"
+  MONGO_URL: "mongo.crp.cc"
+  APP: ecomm
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secret-pod
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+  envFrom:
+    - secretRef:
+        name: ecomm-cm
