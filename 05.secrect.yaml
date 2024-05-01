@@ -4,10 +4,8 @@ kind: ConfigMap
 metadata:
   name: secrets
 data:
-  DBUSER: "admin"
-  PASSWD: "admin"
-  MONGO_URL: "mongo.crp.cc"
-  APP: ecomm
+  DBUSER: "YWRtaW4K"
+  PASSWD: "YWRtaW4K"
 ---
 apiVersion: v1
 kind: Pod
