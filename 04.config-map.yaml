@@ -8,7 +8,6 @@ data:
   MONGO_URL: "mongo.crp.cc"
   APP: ecomm
 ---
-  
 apiVersion: v1
 kind: Pod
 metadata: 
