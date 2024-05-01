@@ -15,6 +15,6 @@ spec:
   containers:
     - name: nginx-container
       image: nginx:latest
-  envFrom:
-    - secretRef:
-        name: ecomm-cm
+      envFrom:
+       - secretRef:
+          name: ecomm-cm
