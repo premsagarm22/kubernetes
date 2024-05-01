@@ -10,12 +10,12 @@ data:
 ---
 apiVersion: v1
 kind: Pod
-metadata: 
+metadata:
   name: pod-4
 spec:
-    containers: 
+  containers:
     - name: nginx-container
       image: nginx:latest
-    envFrom:
-        - ConfigMapRef:
-            name: ecomm-cm
+  envFrom:
+    - configMapRef:
+        name: ecomm-cm
