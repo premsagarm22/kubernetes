@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: ecomm-cm
 data:
-  BATCH: "55"
+  BATCH: "56"
   ENVIRONMENT: "dev"
   MONGO_URL: "mongo.crp.cc"
   APP: ecomm
