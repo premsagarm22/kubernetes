@@ -4,8 +4,19 @@ metadata:
   name: ecomm-cm
 data:
   BATCH: "55"
-  ENVIRONMENT: "user-interface-properties"
+  ENVIRONMENT: "dev"
   MONGO_URL: "mongo.crp.cc"
   APP: ecomm
-
+---
   
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: pod-3
+spec:
+    containers: 
+    - name: nginx-container
+      image: nginx:latest
+      envfrom:
+        - ConfigMapRef:
+            name: ecomm-cm
