@@ -17,6 +17,6 @@ spec:
     containers: 
     - name: nginx-container
       image: nginx:latest
-      envfrom:
+      envFrom:
         - ConfigMapRef:
             name: ecomm-cm
